@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+/*! base css start */
+* {
+  margin: 0;
+}
+body {
+  font-family: "Electrolize", sans-serif;
+ 
+
+}
+/*! base css end */
+
+/*! navbar start */
+.navbar {
+  background-color: black;
+  height: 60px;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+}
+.logo {
+  font-size: 30px;
+  color: rgba(255, 70, 70);
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+}
+.menu-list-item {
+  cursor: pointer;
+}
+.menu-list-item:hover {
+  font-weight: bold;
+}
+.menu-list-item-active {
+  font-weight: bold;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.profile-container-text {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  line-height: 1;
+}
+.toggle {
+  width: 40px;
+  background-color: white;
+  position: relative;
+  height: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.toggle-icon {
+  color: goldenrod;
+}
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+}
+
+/*! navbar end */
+
+/* !sidebar start */
+.sidebar {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60 px;
+  row-gap: 40px;
+  position: fixed;
+  top: 0;
+}
+.sidebar i {
+  color: white;
+  font-size: 20 px;
+  cursor: pointer;
+}
+/* !sidebar end */
+/*! Featured start */
+.content-wrapper{
+  margin-left: 50px;
+
+
+}
+.featured-content{
+  background: url(img/spiderman.jpg);
+  padding: 50px;
+  height: calc(100vh -150px);
+  background-size: 100% 100%;
+
+}
+.featured-title{
+  width: 400px;
+
+}
+.featured-disc{
+  width: 500px;
+  background-color: rgba(255,255, 255,0);
+  padding: 10px;
+  margin: 30px 0;
+}
+.featured-buttons{
+  display: flex;
+  column-gap: 20px;
+
+}
+.featured-buttons button{
+  padding: 10px 25px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  column-gap: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.featured-buttons .info-button{
+  background-color: rgba(145, 142, 142, 0.5);
+  color: white
+  ;
+
+}
+/*! Featured end */
